@@ -16,5 +16,7 @@ We apply the proposed blockwise training to train two models:
 
 Stylization with both models requires guided filtering in ```utils/photo_gif.py``` as the post-processing. The file is adapted from the one used in the [PhotoWCT code](https://github.com/NVIDIA/FastPhotoStyle).
 
+The performance of these two models is similar. Please choose whichever you would like to use.
+
 ## Citation
 If you find this repo useful, please cite our paper **PhotoWCT2: Compact Autoencoder for Photorealistic Style Transfer Resulting from Blockwise Training and Skip Connections of High-Frequency Residuals** published in WACV 2022.

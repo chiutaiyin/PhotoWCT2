@@ -2,7 +2,7 @@
 Code for our WACV 2022 paper [PhotoWCT2: Compact Autoencoder for Photorealistic Style Transfer Resulting from Blockwise Training and Skip Connections of High-Frequency Residuals](https://https://arxiv.org/abs/2110.11995)
 
 ## Requirements 
-- tensorflow v2.0.0 or above
+- tensorflow v2.0.0 or above (we developed the models with tf-v2.4.1 and we also tested them in tf-v2.0.0)
 
 ## Models and files
 We apply the proposed blockwise training to train two models:

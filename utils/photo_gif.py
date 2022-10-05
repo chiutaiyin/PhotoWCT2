@@ -28,14 +28,13 @@ class GIFSmoothing():
         '''
         if type(initImg) == str:
             init_img = cv2.imread(initImg)
-#             init_img = init_img[2:-2,2:-2,:]
         else:
-            init_img = np.array(initImg)[:, :, ::-1].copy()
+            init_img = np.array(initImg[:, :, ::-1]*255, dtype=np.uint8)#.copy()
 
         if type(contentImg) == str:
             cont_img = cv2.imread(contentImg)
         else:
-            cont_img = np.array(contentImg)[:, :, ::-1].copy()
+            cont_img = np.array(contentImg[:, :, ::-1]*255, dtype=np.uint8)#.copy()
             
         if init_img.shape != cont_img.shape:
             cont_img = cv2.resize(cont_img, (init_img.shape[1], init_img.shape[0]))

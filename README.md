@@ -1,12 +1,10 @@
 # PhotoWCT2: Compact Autoencoder for Photorealistic Style Transfer Resulting from Blockwise Training and Skip Connections of High-Frequency Residuals
 Code for our WACV 2022 paper [PhotoWCT2: Compact Autoencoder for Photorealistic Style Transfer Resulting from Blockwise Training and Skip Connections of High-Frequency Residuals](https://openaccess.thecvf.com/content/WACV2022/html/Chiu_PhotoWCT2_Compact_Autoencoder_for_Photorealistic_Style_Transfer_Resulting_From_Blockwise_WACV_2022_paper.html)
-- Our PhotoWCT2 transfers stronger effects than WCT2 and comparable effects to those transferred by PhotoWCT.
+- Our PhotoWCT2 transfers stronger effects than [WCT2](https://github.com/clovaai/WCT2) and comparable effects to those transferred by [PhotoWCT](https://github.com/NVIDIA/FastPhotoStyle).
 ![alt text](https://github.com/chiutaiyin/PhotoWCT2/blob/master/banner/banner.jpg)
 - Our PhotoWCT2 preserves better high-frequency details than PhotoWCT (three examples are shown below).
 ![alt text](https://github.com/chiutaiyin/PhotoWCT2/blob/master/banner/phwct2_vs_phwct.jpg)
 
-## Requirements 
-- tensorflow v2.0.0 or above (we developed the models with tf-v2.4.1 and we also tested them in tf-v2.0.0)
 
 ## Models and files
 We apply the proposed blockwise training to train two models:
@@ -24,6 +22,9 @@ The performance of these two models is similar. Please choose whichever you woul
 
 ## Training
 ```train.py``` is the training code for our PhotoWCT2 model. The usage is provided in the file.
+
+## Requirements 
+- tensorflow v2.0.0 or above (we developed the models with tf-v2.4.1 and we also tested them in tf-v2.0.0)
 
 ## Citation
 If you find this repo useful, please cite our paper **PhotoWCT2: Compact Autoencoder for Photorealistic Style Transfer Resulting from Blockwise Training and Skip Connections of High-Frequency Residuals** published in WACV 2022.
